@@ -17,6 +17,12 @@
     <string name="msg_Password">Contraseña</string>
 
     <string name="msg_LogOut">Cerrar Sesión</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="msg_nombre">Nombre del Libro</string>
+    <string name="msg_escritor">Nombre del Escritor</string>
+    <string name="msg_paginas">Cantidad de Paginas</string>
+    <string name="msg_estatus">Estatus del Libro</string>
+
+    <string name="msgLibroAgregado">Libro agregado con exito</string>
+    <string name="msgFaltanDatos">Faltan datos para completar la acción</string>
 </resources>

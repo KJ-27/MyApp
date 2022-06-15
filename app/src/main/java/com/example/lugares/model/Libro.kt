@@ -16,7 +16,7 @@ data class Libro(
     @ColumnInfo(name = "escritor")
     val escritor: String?,
     @ColumnInfo(name = "paginas")
-    val paginas: Int,
+    val paginas: String,
     @ColumnInfo(name = "estatus")
     val estatus: String,
 ) : Parcelable
