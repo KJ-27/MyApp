@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation2"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_libro">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.lugares.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_libro"
+        android:name="com.example.lugares.ui.libro.LibroFragment"
+        android:label="@string/menu_libro"
+        tools:layout="@layout/fragment_libro" >
+        <action
+            android:id="@+id/action_nav_libro_to_addLibroFragment"
+            app:destination="@id/addLibroFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.example.lugares.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addLibroFragment"
+        android:name="com.example.lugares.ui.libro.AddLibroFragment"
+        android:label="fragment_add_libro"
+        tools:layout="@layout/fragment_add_libro" >
+        <action
+            android:id="@+id/action_addLibroFragment_to_nav_libro"
+            app:destination="@id/nav_libro" />
+    </fragment>
 </navigation>
